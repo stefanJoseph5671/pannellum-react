@@ -8,7 +8,7 @@ export default () => {
           href="/"
           className="main-header__brand"
         >
-            Pannellum React Component
+            360 View Component Test
         </a>
       </div>
     </header>

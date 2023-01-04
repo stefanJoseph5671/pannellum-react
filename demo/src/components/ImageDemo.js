@@ -2,16 +2,16 @@ import React, { Component } from "react";
 import { Pannellum } from "../../../src";
 import myImage from "../images/alma.jpg";
 import myImage2 from "../images/milan.jpg";
+import myImage3 from "../images/SAM_100_0357.jpg";
+import myImage4 from "../images/SAM_100_0361.jpg";
 
 export default class ImageDemo extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      mediaPhoto: myImage,
+      mediaPhoto: myImage3,
       yaww: 180,
       test: false,
-      updateText: "initial",
-      author: "author"
     };
     this.ref = React.createRef();
   }
@@ -19,21 +19,21 @@ export default class ImageDemo extends Component {
   hanldeClickImage = (evt, args) => {
     console.log(args.name);
     this.setState({
-      mediaPhoto: myImage2
+      mediaPhoto: myImage4,
     });
   };
 
   handleClick = () => {
     this.setState({
-      mediaPhoto: myImage2,
-      test: false
+      mediaPhoto: myImage4,
+      test: false,
     });
   };
 
   render() {
     return (
       <div className="image_main">
-        <div style={{ display: "flex", flexDirection: "row" }}>
+        {/* <div style={{ display: "flex", flexDirection: "row" }}>
           <button
             onClick={() => this.setState(prevState => ({ author: "change" }))}
           >
@@ -66,13 +66,12 @@ export default class ImageDemo extends Component {
               <button onClick={this.handleClick}> disable </button>
             )}
           </div>
-        </div>
-        <h2 className="section_title">Image Component</h2>
+        </div> */}
+        {/* <h2 className="section_title">360 view test</h2> */}
         <div className="pannellum_div">
           <Pannellum
             ref={this.ref}
-            width="800px"
-            height="400px"
+            height="100vh"
             image={this.state.mediaPhoto}
             pitch={10}
             yaw={this.state.yaww}
@@ -86,7 +85,6 @@ export default class ImageDemo extends Component {
               pitch={11}
               yaw={-167}
               text="Info Hotspot Text 3"
-              URL="https://github.com/farminf"
             />
 
             <Pannellum.Hotspot
@@ -96,9 +94,10 @@ export default class ImageDemo extends Component {
               handleClick={(evt, args) => this.hanldeClickImage(evt, args)}
               handleClickArg={{ name: "test" }}
             />
+
           </Pannellum>
 
-          <div className="codebox">
+          {/* <div className="codebox">
             <pre>
               <code data-language="xml">
                 {`
@@ -153,7 +152,7 @@ export default class ImageDemo extends Component {
                 `}
               </code>
             </pre>
-          </div>
+          </div> */}
         </div>
       </div>
     );

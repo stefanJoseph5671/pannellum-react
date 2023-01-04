@@ -14,9 +14,9 @@ class Demo extends Component {
   render() {
     return (
       <div className="app">
-        <Header />
+        {/* <Header /> */}
         <ImageDemo />
-        <VideoDemo />
+        {/* <VideoDemo /> */}
       </div>
     );
   }
