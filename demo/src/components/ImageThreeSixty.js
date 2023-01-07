@@ -13,11 +13,11 @@ import Stepper from "@mui/material/Stepper";
 import Step from "@mui/material/Step";
 import StepButton from "@mui/material/StepButton";
 
-import myImage1 from "../images/SAM_100_0357.jpg";
-import myImage2 from "../images/SAM_100_0361.jpg";
-import myImage3 from "../images/SAM_100_0367.jpg";
-import myImage4 from "../images/SAM_100_0377.jpg";
-import myImage5 from "../images/SAM_100_0378.jpg";
+// import myImage1 from "../images/SAM_100_0357.jpg";
+// import myImage2 from "../images/SAM_100_0361.jpg";
+// import myImage3 from "../images/SAM_100_0367.jpg";
+// import myImage4 from "../images/SAM_100_0377.jpg";
+// import myImage5 from "../images/SAM_100_0378.jpg";
 
 const steps = [
   "Location 1",
@@ -27,11 +27,16 @@ const steps = [
   "Location 5",
 ];
 
-// const myImage1 = 'https://res.cloudinary.com/giglantis/image/upload/v1673016056/360/SAM_100_0357_pvcins.jpg';
-// const myImage2 = 'https://res.cloudinary.com/giglantis/image/upload/v1673016056/360/SAM_100_0361_hdqpgu.jpg';
-// const myImage3 = 'https://res.cloudinary.com/giglantis/image/upload/v1673016055/360/SAM_100_0367_rn6oqg.jpg';
-// const myImage4 = 'https://res.cloudinary.com/giglantis/image/upload/v1673016057/360/SAM_100_0377_jjgqd8.jpg';
-// const myImage5 = 'https://res.cloudinary.com/giglantis/image/upload/v1673016055/360/SAM_100_0378_xv0o36.jpg';
+const myImage1 =
+  "https://res.cloudinary.com/giglantis/image/upload/v1673016056/360/SAM_100_0357_pvcins.jpg";
+const myImage2 =
+  "https://res.cloudinary.com/giglantis/image/upload/v1673016056/360/SAM_100_0361_hdqpgu.jpg";
+const myImage3 =
+  "https://res.cloudinary.com/giglantis/image/upload/v1673016055/360/SAM_100_0367_rn6oqg.jpg";
+const myImage4 =
+  "https://res.cloudinary.com/giglantis/image/upload/v1673016057/360/SAM_100_0377_jjgqd8.jpg";
+const myImage5 =
+  "https://res.cloudinary.com/giglantis/image/upload/v1673016055/360/SAM_100_0378_xv0o36.jpg";
 
 export default class ImageThreeSixty extends Component {
   constructor(props) {
@@ -56,28 +61,6 @@ export default class ImageThreeSixty extends Component {
       mediaPhoto: myImage2,
       activeStep: 1,
     });
-    setTimeout(() => {
-      var elements = document.getElementsByClassName("image-one-hp");
-      for (var i = 0; i < elements.length; i++) {
-        elements[i].classList.add("hide");
-      }
-      var elementstwo = document.getElementsByClassName("image-two-hp");
-      for (var i = 0; i < elementstwo.length; i++) {
-        elementstwo[i].classList.remove("hide");
-      }
-      var elementsthree = document.getElementsByClassName("image-three-hp");
-      for (var i = 0; i < elementsthree.length; i++) {
-        elementsthree[i].classList.add("hide");
-      }
-      var elementsfour = document.getElementsByClassName("image-four-hp");
-      for (var i = 0; i < elementsfour.length; i++) {
-        elementsfour[i].classList.add("hide");
-      }
-      var elementsfive = document.getElementsByClassName("image-five-hp");
-      for (var i = 0; i < elementsfive.length; i++) {
-        elementsfive[i].classList.add("hide");
-      }
-    }, 200);
   };
 
   hanldeClickImageTwo = (evt, args) => {
@@ -85,28 +68,6 @@ export default class ImageThreeSixty extends Component {
       mediaPhoto: myImage1,
       activeStep: 0,
     });
-    setTimeout(() => {
-      var elements = document.getElementsByClassName("image-one-hp");
-      for (var i = 0; i < elements.length; i++) {
-        elements[i].classList.remove("hide");
-      }
-      var elementstwo = document.getElementsByClassName("image-two-hp");
-      for (var i = 0; i < elementstwo.length; i++) {
-        elementstwo[i].classList.add("hide");
-      }
-      var elementsthree = document.getElementsByClassName("image-three-hp");
-      for (var i = 0; i < elementsthree.length; i++) {
-        elementsthree[i].classList.add("hide");
-      }
-      var elementsfour = document.getElementsByClassName("image-four-hp");
-      for (var i = 0; i < elementsfour.length; i++) {
-        elementsfour[i].classList.add("hide");
-      }
-      var elementsfive = document.getElementsByClassName("image-five-hp");
-      for (var i = 0; i < elementsfive.length; i++) {
-        elementsfive[i].classList.add("hide");
-      }
-    }, 200);
   };
 
   hanldeClickImageThree = (evt, args) => {
@@ -114,28 +75,6 @@ export default class ImageThreeSixty extends Component {
       mediaPhoto: myImage3,
       activeStep: 2,
     });
-    setTimeout(() => {
-      var elements = document.getElementsByClassName("image-one-hp");
-      for (var i = 0; i < elements.length; i++) {
-        elements[i].classList.add("hide");
-      }
-      var elementstwo = document.getElementsByClassName("image-two-hp");
-      for (var i = 0; i < elementstwo.length; i++) {
-        elementstwo[i].classList.add("hide");
-      }
-      var elementsthree = document.getElementsByClassName("image-three-hp");
-      for (var i = 0; i < elementsthree.length; i++) {
-        elementsthree[i].classList.remove("hide");
-      }
-      var elementsfour = document.getElementsByClassName("image-four-hp");
-      for (var i = 0; i < elementsfour.length; i++) {
-        elementsfour[i].classList.add("hide");
-      }
-      var elementsfive = document.getElementsByClassName("image-five-hp");
-      for (var i = 0; i < elementsfive.length; i++) {
-        elementsfive[i].classList.add("hide");
-      }
-    }, 200);
   };
 
   hanldeClickImageFour = (evt, args) => {
@@ -143,28 +82,6 @@ export default class ImageThreeSixty extends Component {
       mediaPhoto: myImage4,
       activeStep: 3,
     });
-    setTimeout(() => {
-      var elements = document.getElementsByClassName("image-one-hp");
-      for (var i = 0; i < elements.length; i++) {
-        elements[i].classList.add("hide");
-      }
-      var elementstwo = document.getElementsByClassName("image-two-hp");
-      for (var i = 0; i < elementstwo.length; i++) {
-        elementstwo[i].classList.add("hide");
-      }
-      var elementsthree = document.getElementsByClassName("image-three-hp");
-      for (var i = 0; i < elementsthree.length; i++) {
-        elementsthree[i].classList.add("hide");
-      }
-      var elementsfour = document.getElementsByClassName("image-four-hp");
-      for (var i = 0; i < elementsfour.length; i++) {
-        elementsfour[i].classList.remove("hide");
-      }
-      var elementsfive = document.getElementsByClassName("image-five-hp");
-      for (var i = 0; i < elementsfive.length; i++) {
-        elementsfive[i].classList.add("hide");
-      }
-    }, 200);
   };
 
   hanldeClickImageFive = (evt, args) => {
@@ -172,28 +89,6 @@ export default class ImageThreeSixty extends Component {
       mediaPhoto: myImage5,
       activeStep: 4,
     });
-    setTimeout(() => {
-      var elements = document.getElementsByClassName("image-one-hp");
-      for (var i = 0; i < elements.length; i++) {
-        elements[i].classList.add("hide");
-      }
-      var elementstwo = document.getElementsByClassName("image-two-hp");
-      for (var i = 0; i < elementstwo.length; i++) {
-        elementstwo[i].classList.add("hide");
-      }
-      var elementsthree = document.getElementsByClassName("image-three-hp");
-      for (var i = 0; i < elementsthree.length; i++) {
-        elementsthree[i].classList.add("hide");
-      }
-      var elementsfour = document.getElementsByClassName("image-four-hp");
-      for (var i = 0; i < elementsfour.length; i++) {
-        elementsfour[i].classList.add("hide");
-      }
-      var elementsfive = document.getElementsByClassName("image-five-hp");
-      for (var i = 0; i < elementsfive.length; i++) {
-        elementsfive[i].classList.remove("hide");
-      }
-    }, 200);
   };
 
   hanldeTextInfoClick = (evt, args) => {
@@ -255,136 +150,143 @@ export default class ImageThreeSixty extends Component {
         this.setState({
           mediaPhoto: myImage1,
         });
-        setTimeout(() => {
-          var elements = document.getElementsByClassName("image-one-hp");
-          for (var i = 0; i < elements.length; i++) {
-            elements[i].classList.remove("hide");
-          }
-          var elementstwo = document.getElementsByClassName("image-two-hp");
-          for (var i = 0; i < elementstwo.length; i++) {
-            elementstwo[i].classList.add("hide");
-          }
-          var elementsthree = document.getElementsByClassName("image-three-hp");
-          for (var i = 0; i < elementsthree.length; i++) {
-            elementsthree[i].classList.add("hide");
-          }
-          var elementsfour = document.getElementsByClassName("image-four-hp");
-          for (var i = 0; i < elementsfour.length; i++) {
-            elementsfour[i].classList.add("hide");
-          }
-          var elementsfive = document.getElementsByClassName("image-five-hp");
-          for (var i = 0; i < elementsfive.length; i++) {
-            elementsfive[i].classList.add("hide");
-          }
-        }, 200);
         break;
       case 1:
         this.setState({
           mediaPhoto: myImage2,
         });
-        setTimeout(() => {
-          var elements = document.getElementsByClassName("image-one-hp");
-          for (var i = 0; i < elements.length; i++) {
-            elements[i].classList.add("hide");
-          }
-          var elementstwo = document.getElementsByClassName("image-two-hp");
-          for (var i = 0; i < elementstwo.length; i++) {
-            elementstwo[i].classList.remove("hide");
-          }
-          var elementsthree = document.getElementsByClassName("image-three-hp");
-          for (var i = 0; i < elementsthree.length; i++) {
-            elementsthree[i].classList.add("hide");
-          }
-          var elementsfour = document.getElementsByClassName("image-four-hp");
-          for (var i = 0; i < elementsfour.length; i++) {
-            elementsfour[i].classList.add("hide");
-          }
-          var elementsfive = document.getElementsByClassName("image-five-hp");
-          for (var i = 0; i < elementsfive.length; i++) {
-            elementsfive[i].classList.add("hide");
-          }
-        }, 200);
         break;
       case 2:
         this.setState({
           mediaPhoto: myImage3,
         });
-        setTimeout(() => {
-          var elements = document.getElementsByClassName("image-one-hp");
-          for (var i = 0; i < elements.length; i++) {
-            elements[i].classList.add("hide");
-          }
-          var elementstwo = document.getElementsByClassName("image-two-hp");
-          for (var i = 0; i < elementstwo.length; i++) {
-            elementstwo[i].classList.add("hide");
-          }
-          var elementsthree = document.getElementsByClassName("image-three-hp");
-          for (var i = 0; i < elementsthree.length; i++) {
-            elementsthree[i].classList.remove("hide");
-          }
-          var elementsfour = document.getElementsByClassName("image-four-hp");
-          for (var i = 0; i < elementsfour.length; i++) {
-            elementsfour[i].classList.add("hide");
-          }
-          var elementsfive = document.getElementsByClassName("image-five-hp");
-          for (var i = 0; i < elementsfive.length; i++) {
-            elementsfive[i].classList.add("hide");
-          }
-        }, 200);
         break;
       case 3:
         this.setState({
           mediaPhoto: myImage4,
         });
-        setTimeout(() => {
-          var elements = document.getElementsByClassName("image-one-hp");
-          for (var i = 0; i < elements.length; i++) {
-            elements[i].classList.add("hide");
-          }
-          var elementstwo = document.getElementsByClassName("image-two-hp");
-          for (var i = 0; i < elementstwo.length; i++) {
-            elementstwo[i].classList.add("hide");
-          }
-          var elementsthree = document.getElementsByClassName("image-three-hp");
-          for (var i = 0; i < elementsthree.length; i++) {
-            elementsthree[i].classList.add("hide");
-          }
-          var elementsfour = document.getElementsByClassName("image-four-hp");
-          for (var i = 0; i < elementsfour.length; i++) {
-            elementsfour[i].classList.remove("hide");
-          }
-          var elementsfive = document.getElementsByClassName("image-five-hp");
-          for (var i = 0; i < elementsfive.length; i++) {
-            elementsfive[i].classList.add("hide");
-          }
-        }, 200);
         break;
       case 4:
         this.setState({
           mediaPhoto: myImage5,
         });
-        setTimeout(() => {
-          var elements = document.getElementsByClassName("image-one-hp");
-          for (var i = 0; i < elements.length; i++) {
-            elements[i].classList.add("hide");
-          }
-          var elementstwo = document.getElementsByClassName("image-two-hp");
-          for (var i = 0; i < elementstwo.length; i++) {
-            elementstwo[i].classList.add("hide");
-          }
-          var elementsthree = document.getElementsByClassName("image-three-hp");
-          for (var i = 0; i < elementsthree.length; i++) {
-            elementsthree[i].classList.add("hide");
-          }
-          var elementsfour = document.getElementsByClassName("image-four-hp");
-          for (var i = 0; i < elementsfour.length; i++) {
-            elementsfour[i].classList.add("hide");
-          }
-          var elementsfive = document.getElementsByClassName("image-five-hp");
-          for (var i = 0; i < elementsfive.length; i++) {
-            elementsfive[i].classList.remove("hide");
-          }
-        }, 200);
+        break;
+      default:
+        break;
+    }
+  };
+
+  onLoad = () => {
+    switch (this.state.activeStep) {
+      case 0:
+        var elements = document.getElementsByClassName("image-one-hp");
+        for (var i = 0; i < elements.length; i++) {
+          elements[i].classList.remove("hide");
+        }
+        var elementstwo = document.getElementsByClassName("image-two-hp");
+        for (var i = 0; i < elementstwo.length; i++) {
+          elementstwo[i].classList.add("hide");
+        }
+        var elementsthree = document.getElementsByClassName("image-three-hp");
+        for (var i = 0; i < elementsthree.length; i++) {
+          elementsthree[i].classList.add("hide");
+        }
+        var elementsfour = document.getElementsByClassName("image-four-hp");
+        for (var i = 0; i < elementsfour.length; i++) {
+          elementsfour[i].classList.add("hide");
+        }
+        var elementsfive = document.getElementsByClassName("image-five-hp");
+        for (var i = 0; i < elementsfive.length; i++) {
+          elementsfive[i].classList.add("hide");
+        }
+        break;
+      case 1:
+        var elements = document.getElementsByClassName("image-one-hp");
+        for (var i = 0; i < elements.length; i++) {
+          elements[i].classList.add("hide");
+        }
+        var elementstwo = document.getElementsByClassName("image-two-hp");
+        for (var i = 0; i < elementstwo.length; i++) {
+          elementstwo[i].classList.remove("hide");
+        }
+        var elementsthree = document.getElementsByClassName("image-three-hp");
+        for (var i = 0; i < elementsthree.length; i++) {
+          elementsthree[i].classList.add("hide");
+        }
+        var elementsfour = document.getElementsByClassName("image-four-hp");
+        for (var i = 0; i < elementsfour.length; i++) {
+          elementsfour[i].classList.add("hide");
+        }
+        var elementsfive = document.getElementsByClassName("image-five-hp");
+        for (var i = 0; i < elementsfive.length; i++) {
+          elementsfive[i].classList.add("hide");
+        }
+        break;
+      case 2:
+        var elements = document.getElementsByClassName("image-one-hp");
+        for (var i = 0; i < elements.length; i++) {
+          elements[i].classList.add("hide");
+        }
+        var elementstwo = document.getElementsByClassName("image-two-hp");
+        for (var i = 0; i < elementstwo.length; i++) {
+          elementstwo[i].classList.add("hide");
+        }
+        var elementsthree = document.getElementsByClassName("image-three-hp");
+        for (var i = 0; i < elementsthree.length; i++) {
+          elementsthree[i].classList.remove("hide");
+        }
+        var elementsfour = document.getElementsByClassName("image-four-hp");
+        for (var i = 0; i < elementsfour.length; i++) {
+          elementsfour[i].classList.add("hide");
+        }
+        var elementsfive = document.getElementsByClassName("image-five-hp");
+        for (var i = 0; i < elementsfive.length; i++) {
+          elementsfive[i].classList.add("hide");
+        }
+        break;
+      case 3:
+        var elements = document.getElementsByClassName("image-one-hp");
+        for (var i = 0; i < elements.length; i++) {
+          elements[i].classList.add("hide");
+        }
+        var elementstwo = document.getElementsByClassName("image-two-hp");
+        for (var i = 0; i < elementstwo.length; i++) {
+          elementstwo[i].classList.add("hide");
+        }
+        var elementsthree = document.getElementsByClassName("image-three-hp");
+        for (var i = 0; i < elementsthree.length; i++) {
+          elementsthree[i].classList.add("hide");
+        }
+        var elementsfour = document.getElementsByClassName("image-four-hp");
+        for (var i = 0; i < elementsfour.length; i++) {
+          elementsfour[i].classList.remove("hide");
+        }
+        var elementsfive = document.getElementsByClassName("image-five-hp");
+        for (var i = 0; i < elementsfive.length; i++) {
+          elementsfive[i].classList.add("hide");
+        }
+        break;
+      case 4:
+        var elements = document.getElementsByClassName("image-one-hp");
+        for (var i = 0; i < elements.length; i++) {
+          elements[i].classList.add("hide");
+        }
+        var elementstwo = document.getElementsByClassName("image-two-hp");
+        for (var i = 0; i < elementstwo.length; i++) {
+          elementstwo[i].classList.add("hide");
+        }
+        var elementsthree = document.getElementsByClassName("image-three-hp");
+        for (var i = 0; i < elementsthree.length; i++) {
+          elementsthree[i].classList.add("hide");
+        }
+        var elementsfour = document.getElementsByClassName("image-four-hp");
+        for (var i = 0; i < elementsfour.length; i++) {
+          elementsfour[i].classList.add("hide");
+        }
+        var elementsfive = document.getElementsByClassName("image-five-hp");
+        for (var i = 0; i < elementsfive.length; i++) {
+          elementsfive[i].classList.remove("hide");
+        }
         break;
       default:
         break;
@@ -406,6 +308,12 @@ export default class ImageThreeSixty extends Component {
             author={this.state.author}
             title=""
             showZoomCtrl={false}
+            onLoad={() => {
+              this.onLoad();
+            }}
+            onScenechange={(id) => {
+              console.log("Scene has change on " + id);
+            }}
           >
             <Pannellum.Hotspot
               cssClass="info-hotspot image-one-hp"
