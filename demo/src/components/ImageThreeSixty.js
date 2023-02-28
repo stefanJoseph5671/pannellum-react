@@ -22,7 +22,7 @@ import StepButton from "@mui/material/StepButton";
 const steps = [
   "Image 1",
   "Image 2",
-  // "Location 3",
+  "Image 3",
   // "Location 4",
   // "Location 5",
 ];
@@ -32,7 +32,7 @@ const myImage1 =
 const myImage2 =
   "https://res.cloudinary.com/giglantis/image/upload/v1677576396/360/P2_bzrs7p.jpg";
 const myImage3 =
-  "https://res.cloudinary.com/giglantis/image/upload/v1677576191/360/P1_akgr9g.jpg";
+  "https://res.cloudinary.com/giglantis/image/upload/v1677595530/360/P3_dy0zhi.jpg";
 const myImage4 =
   "https://res.cloudinary.com/giglantis/image/upload/v1677576396/360/P2_bzrs7p.jpg";
 const myImage5 =
@@ -331,6 +331,15 @@ export default class ImageThreeSixty extends Component {
             />
 
             <Pannellum.Hotspot
+              cssClass="arrow-hotspot image-one-hp"
+              type="custom"
+              pitch={-5}
+              yaw={227}
+              handleClick={(evt, args) => this.hanldeClickImageThree(evt, args)}
+              handleClickArg={{ name: "test" }}
+            />
+
+            <Pannellum.Hotspot
               cssClass="info-hotspot image-one-hp"
               type="custom"
               pitch={-5}
@@ -346,7 +355,6 @@ export default class ImageThreeSixty extends Component {
               handleClick={(evt, args) => this.hanldeClickImageOne(evt, args)}
               handleClickArg={{ name: "test" }}
             />
-            
 
             <Pannellum.Hotspot
               cssClass="arrow-hotspot image-two-hp hide"
@@ -357,7 +365,15 @@ export default class ImageThreeSixty extends Component {
               handleClickArg={{ name: "test" }}
             />
 
-            </Pannellum>
+            <Pannellum.Hotspot
+              cssClass="arrow-hotspot image-three-hp hide"
+              type="custom"
+              pitch={-20}
+              yaw={190}
+              handleClick={(evt, args) => this.hanldeClickImageTwo(evt, args)}
+              handleClickArg={{ name: "test" }}
+            />
+          </Pannellum>
 
           <section className="stepper-container">
             <Stepper
