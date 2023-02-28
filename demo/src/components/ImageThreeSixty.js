@@ -20,8 +20,8 @@ import StepButton from "@mui/material/StepButton";
 // import myImage5 from "../images/SAM_100_0378.jpg";
 
 const steps = [
-  "Location 1",
-  "Location 2",
+  "Image 1",
+  "Image 2",
   // "Location 3",
   // "Location 4",
   // "Location 5",
