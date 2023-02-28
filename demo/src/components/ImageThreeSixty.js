@@ -22,21 +22,21 @@ import StepButton from "@mui/material/StepButton";
 const steps = [
   "Location 1",
   "Location 2",
-  "Location 3",
-  "Location 4",
-  "Location 5",
+  // "Location 3",
+  // "Location 4",
+  // "Location 5",
 ];
 
 const myImage1 =
-  "https://res.cloudinary.com/giglantis/image/upload/v1673016056/360/SAM_100_0357_pvcins.jpg";
+  "https://res.cloudinary.com/giglantis/image/upload/v1677576191/360/P1_akgr9g.jpg";
 const myImage2 =
-  "https://res.cloudinary.com/giglantis/image/upload/v1673016056/360/SAM_100_0361_hdqpgu.jpg";
+  "https://res.cloudinary.com/giglantis/image/upload/v1677576396/360/P2_bzrs7p.jpg";
 const myImage3 =
-  "https://res.cloudinary.com/giglantis/image/upload/v1673016055/360/SAM_100_0367_rn6oqg.jpg";
+  "https://res.cloudinary.com/giglantis/image/upload/v1677576191/360/P1_akgr9g.jpg";
 const myImage4 =
-  "https://res.cloudinary.com/giglantis/image/upload/v1673016057/360/SAM_100_0377_jjgqd8.jpg";
+  "https://res.cloudinary.com/giglantis/image/upload/v1677576396/360/P2_bzrs7p.jpg";
 const myImage5 =
-  "https://res.cloudinary.com/giglantis/image/upload/v1673016055/360/SAM_100_0378_xv0o36.jpg";
+  "https://res.cloudinary.com/giglantis/image/upload/v1677576191/360/P1_akgr9g.jpg";
 
 export default class ImageThreeSixty extends Component {
   constructor(props) {
@@ -346,24 +346,7 @@ export default class ImageThreeSixty extends Component {
               handleClick={(evt, args) => this.hanldeClickImageOne(evt, args)}
               handleClickArg={{ name: "test" }}
             />
-
-            <Pannellum.Hotspot
-              cssClass="arrow-hotspot image-one-hp"
-              type="custom"
-              pitch={-5}
-              yaw={227}
-              handleClick={(evt, args) => this.hanldeClickImageThree(evt, args)}
-              handleClickArg={{ name: "test" }}
-            />
-
-            <Pannellum.Hotspot
-              cssClass="arrow-hotspot image-one-hp"
-              type="custom"
-              pitch={-15}
-              yaw={252}
-              handleClick={(evt, args) => this.hanldeClickImageFive(evt, args)}
-              handleClickArg={{ name: "test" }}
-            />
+            
 
             <Pannellum.Hotspot
               cssClass="arrow-hotspot image-two-hp hide"
@@ -374,42 +357,7 @@ export default class ImageThreeSixty extends Component {
               handleClickArg={{ name: "test" }}
             />
 
-            <Pannellum.Hotspot
-              cssClass="arrow-hotspot image-three-hp hide"
-              type="custom"
-              pitch={-20}
-              yaw={190}
-              handleClick={(evt, args) => this.hanldeClickImageTwo(evt, args)}
-              handleClickArg={{ name: "test" }}
-            />
-
-            <Pannellum.Hotspot
-              cssClass="arrow-hotspot image-three-hp hide"
-              type="custom"
-              pitch={-10}
-              yaw={295}
-              handleClick={(evt, args) => this.hanldeClickImageFour(evt, args)}
-              handleClickArg={{ name: "test" }}
-            />
-
-            <Pannellum.Hotspot
-              cssClass="arrow-hotspot image-four-hp hide"
-              type="custom"
-              pitch={-10}
-              yaw={355}
-              handleClick={(evt, args) => this.hanldeClickImageThree(evt, args)}
-              handleClickArg={{ name: "test" }}
-            />
-
-            <Pannellum.Hotspot
-              cssClass="arrow-hotspot down-arrow image-five-hp hide"
-              type="custom"
-              pitch={-25}
-              yaw={220}
-              handleClick={(evt, args) => this.hanldeClickImageTwo(evt, args)}
-              handleClickArg={{ name: "test" }}
-            />
-          </Pannellum>
+            </Pannellum>
 
           <section className="stepper-container">
             <Stepper
